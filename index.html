@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rafael Coelho Balieiro — Portfólio</title>
+<meta name="description" content="Portfólio de Rafael Coelho Balieiro, estudante de TI com foco em backend e frontend.">
+<meta name="theme-color" content="#1b130e">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="locked">
+
+<!-- FUNCIONALIDADE 1 — ENTRADA (segure para quebrar o vidro) -->
+<div id="intro" role="dialog" aria-label="Tela de entrada" tabindex="0">
+  <div class="frags" id="frags" aria-hidden="true"></div>
+  <div class="intro-core">
+    <svg class="ring" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="46"/><circle id="ringFill" cx="50" cy="50" r="46"/></svg>
+    <p class="intro-msg" id="introMsg">Hold to enter</p>
+    <p class="intro-hint">Segure o botão do mouse, o dedo ou a tecla Enter</p>
+  </div>
+  <button id="skip" type="button">Pular animação</button>
+</div>
+
+<!-- FUNCIONALIDADE 2 — MENU -->
+<header class="nav" id="nav">
+  <a class="brand" href="#home" aria-label="Rafael Coelho Balieiro, início">R.B.</a>
+  <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu"><span></span><span></span></button>
+  <nav id="menu" aria-label="Principal">
+    <a href="#home" class="active">Home</a>
+    <a href="#sobre">Sobre mim</a>
+    <a href="#projetos">Projetos</a>
+    <a href="#habilidades">Habilidades</a>
+    <a href="#contato">Contato</a>
+  </nav>
+</header>
+
+<main id="main" tabindex="-1">
+
+<!-- FUNCIONALIDADE 3 — HERO. Edite os textos aqui -->
+<section id="home" class="hero">
+  <div class="sun" aria-hidden="true"></div>
+  <h1 class="display">
+    <span class="l1">Rafael</span>
+    <span class="l2">Coelho</span>
+    <span class="l3">Balieiro</span>
+  </h1>
+  <div class="hero-side">
+    <p class="role">Cursando TI no colégio Raphael Di Santo, 2º ano</p>
+    <p class="lead">Foco em evoluir tanto no backend quanto no frontend.</p>
+    <a class="btn" href="#projetos"><span>Ver projetos</span></a>
+  </div>
+</section>
+
+<!-- FUNCIONALIDADE 4 — SOBRE -->
+<section id="sobre" class="about">
+  <p class="statement reveal">Estudo TI e quero dominar os dois lados de um sistema: o que o usuário vê e o que roda por trás.</p>
+  <div class="about-body reveal">
+    <p>Sou o Rafael Coelho Balieiro e atualmente curso TI no colégio Raphael Di Santo, tendo foco em melhorar cada vez mais tanto em backend quanto em frontend.</p>
+    <!-- EDITE: adicione trajetória, interesses e objetivos reais -->
+    <dl class="facts">
+      <div><dt>Onde estudo</dt><dd>Colégio Raphael Di Santo</dd></div>
+      <div><dt>Ano</dt><dd>2º ano de TI</dd></div>
+      <div><dt>Foco</dt><dd>Backend e frontend</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- FUNCIONALIDADE 5 — PROJETOS. Duplique um <article> para cada projeto -->
+<section id="projetos" class="projects">
+  <h2 class="display sm reveal">Projetos</h2>
+  <div class="grid">
+    <article class="card reveal">
+      <a href="#" class="card-link" aria-label="Ver projeto: Nome do projeto 1">
+        <div class="shot"><!-- troque por <img src="assets/img/projeto1.jpg" alt="..."> --><span>Imagem do projeto</span></div>
+        <div class="info">
+          <h3>Nome do projeto 1</h3>
+          <p>Descrição breve do que o projeto faz e qual problema resolve.</p>
+          <ul class="tags"><li>Tecnologia</li><li>Tecnologia</li></ul>
+          <span class="view">Visualizar projeto</span>
+        </div>
+      </a>
+    </article>
+    <article class="card reveal">
+      <a href="#" class="card-link" aria-label="Ver projeto: Nome do projeto 2">
+        <div class="shot"><span>Imagem do projeto</span></div>
+        <div class="info">
+          <h3>Nome do projeto 2</h3>
+          <p>Descrição breve do que o projeto faz e qual problema resolve.</p>
+          <ul class="tags"><li>Tecnologia</li><li>Tecnologia</li></ul>
+          <span class="view">Visualizar projeto</span>
+        </div>
+      </a>
+    </article>
+    <article class="card reveal">
+      <a href="#" class="card-link" aria-label="Ver projeto: Nome do projeto 3">
+        <div class="shot"><span>Imagem do projeto</span></div>
+        <div class="info">
+          <h3>Nome do projeto 3</h3>
+          <p>Descrição breve do que o projeto faz e qual problema resolve.</p>
+          <ul class="tags"><li>Tecnologia</li><li>Tecnologia</li></ul>
+          <span class="view">Visualizar projeto</span>
+        </div>
+      </a>
+    </article>
+  </div>
+</section>
+
+<!-- FUNCIONALIDADE 6 — HABILIDADES. Substitua os <li> pelas suas -->
+<section id="habilidades" class="skills">
+  <h2 class="display sm reveal">Habilidades</h2>
+  <div class="skill-cols">
+    <div class="reveal"><h3>Frontend</h3><ul><li>Adicione uma tecnologia</li><li>Adicione uma tecnologia</li><li>Adicione uma tecnologia</li></ul></div>
+    <div class="reveal"><h3>Backend</h3><ul><li>Adicione uma tecnologia</li><li>Adicione uma tecnologia</li><li>Adicione uma tecnologia</li></ul></div>
+    <div class="reveal"><h3>Ferramentas</h3><ul><li>Adicione uma ferramenta</li><li>Adicione uma ferramenta</li></ul></div>
+  </div>
+</section>
+
+<!-- FUNCIONALIDADE 7 — CONTATO.
+     Para o envio funcionar: crie um formulário em formspree.io e troque SEU_ID abaixo. -->
+<section id="contato" class="contact">
+  <h2 class="display reveal">Vamos conversar</h2>
+  <div class="contact-grid">
+    <form id="form" class="reveal" action="https://formspree.io/f/SEU_ID" method="POST" novalidate>
+      <div class="field"><input id="nome" name="nome" type="text" placeholder=" " required minlength="2" autocomplete="name"><label for="nome">Nome</label><small></small></div>
+      <div class="field"><input id="email" name="email" type="email" placeholder=" " required autocomplete="email"><label for="email">E-mail</label><small></small></div>
+      <div class="field"><textarea id="msg" name="mensagem" rows="4" placeholder=" " required minlength="10"></textarea><label for="msg">Mensagem</label><small></small></div>
+      <button class="btn" type="submit"><span>Enviar mensagem</span></button>
+      <p id="status" role="status" aria-live="polite"></p>
+    </form>
+    <ul class="links reveal">
+      <!-- EDITE os links reais -->
+      <li><a href="#" rel="noopener" target="_blank">LinkedIn</a></li>
+      <li><a href="#" rel="noopener" target="_blank">GitHub</a></li>
+      <li><a href="mailto:">E-mail direto</a></li>
+    </ul>
+  </div>
+  <footer>Rafael Coelho Balieiro</footer>
+</section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
